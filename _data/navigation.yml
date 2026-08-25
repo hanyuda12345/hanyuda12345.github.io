@@ -1,0 +1,11 @@
+pages:
+- name: Home
+  url: /
+- name: Experience
+  url: /#experience
+- name: Projects
+  url: /#projects
+- name: Skills
+  url: /#skills
+- name: Resume
+  url: /resume/

@@ -1,0 +1,20 @@
+title: Hanyu Da
+description: Machine Learning Engineer, AI Engineer, and Software Development Engineer portfolio.
+url: "https://hanyuda12345.github.io"
+baseurl: ""
+timezone: America/New_York
+
+# Build settings
+markdown: kramdown
+plugins: []
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - _news
+  - _posts
+  - _publications
+  - _showcase

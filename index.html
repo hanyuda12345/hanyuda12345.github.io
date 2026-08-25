@@ -1,0 +1,179 @@
+---
+layout: default
+title: Home
+navbar_title: Home
+---
+
+<div class="row">
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-9 col-md-8">
+        <section id="about" class="card border-0 shadow-sm bg-white section-card">
+            <div class="card-body p-4">
+                <p class="text-uppercase text-muted small mb-2">Machine Learning · AI Systems · Software Engineering</p>
+                <h1 class="h2 mb-3">Hanyu Da</h1>
+                <p class="lead-line">
+                    I build practical AI systems that combine machine learning, retrieval, computer vision, and
+                    production-minded software engineering. My recent work includes efficient model compression,
+                    FAISS-based visual similarity search, and a local LLM course advising assistant built with RAG.
+                </p>
+                <div class="action-row mt-4">
+                    <a class="btn btn-primary" href="{{ '/assets/files/Hanyu_Da_Resume_2026.pdf' | relative_url }}" target="_blank">
+                        <i class="fas fa-file-lines"></i> Resume
+                    </a>
+                    <a class="btn btn-outline-secondary" href="mailto:{{ site.data.profile.email }}">
+                        <i class="fas fa-envelope"></i> Email
+                    </a>
+                    <a class="btn btn-outline-secondary" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a class="btn btn-outline-secondary" href="https://github.com/{{ site.data.profile.github }}" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="card border-0 shadow-sm bg-white section-card mt-3">
+            <div class="card-body p-4">
+                <h2 class="h4 section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="timeline-item">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h3 class="h5 mb-1">New York University</h3>
+                        <span class="muted-meta">Sep 2025 - May 2027</span>
+                    </div>
+                    <p class="mb-1">M.S. in Computer Engineering · GPA 3.8/4.0</p>
+                    <p class="muted-meta mb-0">Relevant coursework: Efficient AI & Hardware Accelerator Design, Internet Architecture & Protocols, Machine Learning, System Optimization, Embedded Systems, Cloud Computing, High-Speed Networks.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h3 class="h5 mb-1">New York University</h3>
+                        <span class="muted-meta">Sep 2021 - May 2025</span>
+                    </div>
+                    <p class="mb-1">B.S. in Applied Mathematics, Minor in Computer Science</p>
+                    <p class="muted-meta mb-0">Relevant coursework: Machine Learning, Data Structures & Algorithms, Computer Networks, Mathematical Modeling, Statistics & Probability, Object-Oriented Programming, Numerical Analysis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="card border-0 shadow-sm bg-white section-card mt-3">
+            <div class="card-body p-4">
+                <h2 class="h4 section-title"><i class="fas fa-briefcase"></i> Experience</h2>
+                <div class="timeline-item">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h3 class="h5 mb-1">Machine Learning Engineer Intern · Chinasoft International Technology Service Ltd.</h3>
+                        <span class="muted-meta">May 2025 - Aug 2025 · Nanjing, China</span>
+                    </div>
+                    <ul class="mb-0">
+                        <li>Built a modular face-clustering pipeline integrating Inception-ResNet-v2 and HyNet for deep feature extraction across 100K+ unlabeled face images.</li>
+                        <li>Accelerated similarity search with FAISS-based KNN and cosine-distance graph construction, reducing search time by 80% and enabling 5x dataset scalability.</li>
+                        <li>Developed noise-filtering and edge-linking logic to refine graph topology, improving clustering precision by 15% and supporting FMI, B-cubed F1, and NMI benchmarking.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="d-flex flex-wrap justify-content-between">
+                        <h3 class="h5 mb-1">Data Analyst Intern · Innovation AI</h3>
+                        <span class="muted-meta">Jun 2024 - Aug 2024 · New York, NY</span>
+                    </div>
+                    <ul class="mb-0">
+                        <li>Cleaned and validated movie performance datasets for CVT prediction, including missing-value imputation and categorical/numerical feature preparation.</li>
+                        <li>Analyzed relationships among box office revenue, IMDb ratings, awards, release-year trends, and daily CVT.</li>
+                        <li>Built and compared Linear Regression, Lasso, and Random Forest models, identifying Random Forest as the best-performing CVT predictor.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="card border-0 shadow-sm bg-white section-card mt-3">
+            <div class="card-body p-4">
+                <h2 class="h4 section-title"><i class="fas fa-diagram-project"></i> Selected Projects</h2>
+                <div class="row">
+                    <div class="col-lg-6 mb-3">
+                        <div class="card project-card">
+                            <div class="card-body">
+                                <h3 class="h5">WeatherRemover: Model Compression & Efficient Inference</h3>
+                                <p class="muted-meta">Group Project Leader · Feb 2026 - May 2026</p>
+                                <p>Profiled CMFormer on an NVIDIA RTX 3090 with PyTorch profiler, then applied structured pruning and FP16 mixed-precision inference to reduce compute and memory pressure.</p>
+                                <p class="metric mb-0">~30% fewer parameters · ~39% lower latency · ~0.41 dB PSNR change</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <div class="card project-card">
+                            <div class="card-body">
+                                <h3 class="h5">NYU LLM Course Advising Assistant</h3>
+                                <p class="muted-meta">Group Project Leader · Oct 2025 - Dec 2025</p>
+                                <p>Built a Flask web app integrating a locally deployed Qwen LLM with an end-to-end RAG pipeline over syllabus PDFs using E5 embeddings and FAISS retrieval.</p>
+                                <p class="metric mb-0">RAG · Qwen · Flask · FAISS · query rewriting · pytest</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="card project-card">
+                            <div class="card-body">
+                                <h3 class="h5">Large-Scale Face Clustering & Similarity Search</h3>
+                                <p class="muted-meta">Chinasoft International internship project</p>
+                                <p>Designed feature extraction, approximate nearest-neighbor search, graph construction, filtering, and evaluation for identity-based grouping of large face-image collections.</p>
+                                <p class="metric mb-0">100K+ images · FAISS KNN · cosine graph · 80% faster search</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card project-card">
+                            <div class="card-body">
+                                <h3 class="h5">Movie Performance Prediction Analysis</h3>
+                                <p class="muted-meta">Innovation AI internship project</p>
+                                <p>Prepared and modeled performance datasets to evaluate how genre, release timing, ratings, and awards relate to box-office and CVT outcomes.</p>
+                                <p class="metric mb-0">Python · pandas · scikit-learn · Random Forest · regression</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="card border-0 shadow-sm bg-white section-card mt-3">
+            <div class="card-body p-4">
+                <h2 class="h4 section-title"><i class="fas fa-layer-group"></i> Skills</h2>
+                <h3 class="h6 mt-2">Programming & Web</h3>
+                <div class="tag-list mb-3">
+                    <span class="skill-tag">Python</span><span class="skill-tag">C++</span><span class="skill-tag">SQL</span><span class="skill-tag">Java</span><span class="skill-tag">JavaScript</span><span class="skill-tag">React.js</span><span class="skill-tag">Django</span><span class="skill-tag">Flask</span><span class="skill-tag">HTML/CSS</span><span class="skill-tag">Swift</span><span class="skill-tag">Unix</span>
+                </div>
+                <h3 class="h6">Machine Learning & AI Systems</h3>
+                <div class="tag-list mb-3">
+                    <span class="skill-tag">PyTorch</span><span class="skill-tag">scikit-learn</span><span class="skill-tag">NumPy</span><span class="skill-tag">pandas</span><span class="skill-tag">SciPy</span><span class="skill-tag">CNNs</span><span class="skill-tag">Clustering</span><span class="skill-tag">SVM</span><span class="skill-tag">Logistic Regression</span><span class="skill-tag">Random Forest</span><span class="skill-tag">PCA</span>
+                </div>
+                <h3 class="h6">AI Infrastructure & Retrieval</h3>
+                <div class="tag-list mb-3">
+                    <span class="skill-tag">Model Compression</span><span class="skill-tag">Structured Pruning</span><span class="skill-tag">FP16 Inference</span><span class="skill-tag">RAG</span><span class="skill-tag">FAISS Retrieval</span><span class="skill-tag">Local LLM Deployment</span><span class="skill-tag">Qwen</span><span class="skill-tag">Evaluation Pipelines</span>
+                </div>
+                <h3 class="h6">Languages</h3>
+                <div class="tag-list">
+                    <span class="skill-tag">Mandarin Chinese: native</span><span class="skill-tag">English: full professional proficiency</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="card border-0 shadow-sm bg-white section-card mt-3">
+            <div class="card-body p-4">
+                <h2 class="h4 section-title"><i class="fas fa-paper-plane"></i> Contact</h2>
+                <p class="lead-line">Open to machine learning engineering, AI engineering, and software development engineering opportunities.</p>
+                <div class="action-row">
+                    <a class="btn btn-outline-secondary" href="mailto:{{ site.data.profile.email }}">
+                        <i class="fas fa-envelope"></i> {{ site.data.profile.email }}
+                    </a>
+                    <a class="btn btn-outline-secondary" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a class="btn btn-outline-secondary" href="https://github.com/{{ site.data.profile.github }}" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a class="btn btn-outline-secondary" href="{{ '/resume/' | relative_url }}">
+                        <i class="fas fa-file-lines"></i> Resume Page
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

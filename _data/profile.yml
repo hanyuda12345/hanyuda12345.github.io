@@ -1,0 +1,48 @@
+primary_name: "Hanyu Da"
+secondary_name: ""
+navbar_name: "Hanyu Da"
+
+positions:
+- name: Machine Learning Engineer · AI Engineer · Software Development Engineer
+- name: M.S. in Computer Engineering, New York University
+
+email: "hanyuda12345@gmail.com"
+cv_link: /assets/files/Hanyu_Da_Resume_2026.pdf
+linkedin: hanyu-da-7ab32b21b
+github: hanyuda12345
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a machine learning and AI engineer focused on building practical systems across computer vision,
+    retrieval, and software engineering. My work spans efficient model inference, large-scale visual similarity
+    search, RAG applications, and data-driven product analysis.
+  </p>
+  <p>
+    I am currently pursuing an M.S. in Computer Engineering at New York University, with prior training in
+    applied mathematics and computer science. I like work where strong engineering fundamentals make AI systems
+    faster, easier to evaluate, and more useful to people.
+  </p>
+
+portrait_url: /assets/images/photos/hanyu-da-avatar.png
+portrait_caption: >-
+  Hanyu Da
+
+education:
+- name: New York University
+  position: >- 
+    M.S. in Computer Engineering
+  date: Sep 2025 - May 2027
+- name: New York University
+  position: B.S. in Applied Mathematics, Minor in Computer Science
+  date: Sep 2021 - May 2025
+
+experience:
+- name: Chinasoft International Technology Service Ltd.
+  position: Machine Learning Engineer Intern
+  date: May 2025 - Aug 2025
+- name: Innovation AI
+  position: Data Analyst Intern
+  date: Jun 2024 - Aug 2024
+
+awards: []
